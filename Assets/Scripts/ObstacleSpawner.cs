@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EngelSpawner : MonoBehaviour
+public class ObstacleSpawner : MonoBehaviour
 {
     public Bird BirdScript;
     public GameObject Engeller;

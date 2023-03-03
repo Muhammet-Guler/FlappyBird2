@@ -1130,7 +1130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1709483719}
-  - component: {fileID: 1709483718}
+  - component: {fileID: 1709483720}
   m_Layer: 0
   m_Name: EngelSpawner
   m_TagString: Untagged
@@ -1138,22 +1138,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1709483718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709483717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97301528190fe474b91e1ba458d3f4dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BirdScript: {fileID: 1475304338}
-  Engeller: {fileID: 8086900853205040646, guid: 18484d9d3f531784c8214951a64f434c, type: 3}
-  height: 2
-  time: 1.5
 --- !u!4 &1709483719
 Transform:
   m_ObjectHideFlags: 0
@@ -1169,6 +1153,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1709483720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709483717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97301528190fe474b91e1ba458d3f4dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BirdScript: {fileID: 1475304338}
+  Engeller: {fileID: 8086900853205040646, guid: 18484d9d3f531784c8214951a64f434c, type: 3}
+  height: 2
+  time: 1.5
 --- !u!1 &1782456539
 GameObject:
   m_ObjectHideFlags: 0

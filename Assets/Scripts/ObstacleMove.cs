@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EngelHareket : MonoBehaviour
+public class ObstacleMove : MonoBehaviour
 {
     public float speed;
     void Start()
