@@ -29,6 +29,11 @@ public class Bird : MonoBehaviour
         {
             gameManager.UpdateSkor();
         }
+        if (collision.gameObject.tag == "Balloon")
+        {
+            gameManager.UpdateSkor();
+            Destroy(collision.gameObject);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -38,5 +43,6 @@ public class Bird : MonoBehaviour
             Time.timeScale = 0;
             olumEkrani.SetActive(true); 
         }
+
     }
 }
