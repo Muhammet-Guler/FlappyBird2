@@ -7,7 +7,7 @@ public class ObstacleMove : MonoBehaviour
     public float speed;
     void Start()
     {
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 10);
 
     }
 

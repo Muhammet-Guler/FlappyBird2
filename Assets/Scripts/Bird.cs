@@ -9,6 +9,7 @@ public class Bird : MonoBehaviour
     public float velocity = 1f;
     public GameManager gameManager;
     public GameObject olumEkrani;
+    float zValue;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,17 @@ public class Bird : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             rb2d.velocity = Vector2.up * velocity;
+            zValue = transform.rotation.eulerAngles.z;
+            transform.eulerAngles = Vector3.forward * (zValue + 30);
+        }
+        else if (rb2d)
+        {
+            zValue = transform.rotation.eulerAngles.z;
+            transform.eulerAngles = Vector3.forward * (zValue - 1);
+            if (oldumu == true)
+            {
+                transform.eulerAngles = Vector3.forward * (zValue);
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
