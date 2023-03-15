@@ -22,13 +22,12 @@ public class Bird : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             rb2d.velocity = Vector2.up * velocity;
-            zValue = transform.rotation.eulerAngles.z;
-            transform.eulerAngles = Vector3.forward * (zValue + 30);
+            transform.Rotate(new Vector3(0f, 0f, 30f));
         }
-        else if (rb2d)
+        else if (!Input.GetMouseButtonDown(0))
         {
             zValue = transform.rotation.eulerAngles.z;
-            transform.eulerAngles = Vector3.forward * (zValue - 1);
+            transform.Rotate(new Vector3(0f, 0f, -0.2f));
             if (oldumu == true)
             {
                 transform.eulerAngles = Vector3.forward * (zValue);
