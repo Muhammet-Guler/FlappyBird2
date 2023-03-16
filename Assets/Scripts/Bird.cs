@@ -24,10 +24,10 @@ public class Bird : MonoBehaviour
             rb2d.velocity = Vector2.up * velocity;
             transform.Rotate(new Vector3(0f, 0f, 30f));
         }
-        else if (!Input.GetMouseButtonDown(0))
+        else
         {
             zValue = transform.rotation.eulerAngles.z;
-            transform.Rotate(new Vector3(0f, 0f, -0.2f));
+            transform.Rotate(new Vector3(0f, 0f, -1f));
             if (oldumu == true)
             {
                 transform.eulerAngles = Vector3.forward * (zValue);
