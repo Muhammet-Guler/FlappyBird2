@@ -918,7 +918,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1149540226}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: restartGame
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1153,6 +1153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d009e23b34b154da2c541c2ffb40c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BirdScript: {fileID: 0}
   skor: 0
   skortext: {fileID: 160187316}
 --- !u!4 &1149540227
@@ -1406,6 +1407,7 @@ GameObject:
   - component: {fileID: 1475304340}
   - component: {fileID: 1475304334}
   - component: {fileID: 1475304337}
+  - component: {fileID: 1475304341}
   - component: {fileID: 1475304339}
   m_Layer: 0
   m_Name: "Ku\u015F"
@@ -1534,11 +1536,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a451649334ee94894e67049e6d171f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
   oldumu: 0
   rb2d: {fileID: 1475304337}
   velocity: 3.5
   gameManager: {fileID: 1149540226}
   olumEkrani: {fileID: 631590337}
+  BalloonScore: 0
 --- !u!70 &1475304339
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1565,6 +1569,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bccc6f829d04a34b9b3caa9c85cf9fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1475304341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475304332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3980e50d6cf93840ab05f84f44deb42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1709483717
