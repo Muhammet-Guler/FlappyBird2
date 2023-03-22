@@ -16,7 +16,7 @@ public class ObstacleSpawner : MonoBehaviour
     {
         while (!BirdScript.oldumu)
         {
-            Instantiate(Engeller, new Vector3(3, Random.Range(-height, height), 0), Quaternion.identity);
+            Instantiate(Engeller, new Vector3(6, Random.Range(-height, height), 0), Quaternion.identity);
             yield return new WaitForSeconds(time);
         }
 

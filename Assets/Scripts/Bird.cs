@@ -22,20 +22,46 @@ public class Bird : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {        if (Input.GetMouseButtonDown(0))
-        {
-            rb2d.velocity = Vector2.up * velocity;
-            transform.Rotate(new Vector3(0f, 0f, 30f));
-        }
-        else
+    {
+        if (rb2d == true)
         {
             zValue = transform.rotation.eulerAngles.z;
             transform.Rotate(new Vector3(0f, 0f, -1f));
+            if (transform.eulerAngles.z > 50 && transform.eulerAngles.z < 310)
+            {
+                transform.eulerAngles = Vector3.forward * (zValue);
+            }
             if (oldumu == true)
             {
                 transform.eulerAngles = Vector3.forward * (zValue);
             }
         }
+        
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            rb2d.velocity = Vector2.up * velocity;
+            //transform.Rotate(new Vector3(0f, 0f, 30f));
+            //if (transform.position.y < 0)
+            //{
+            //    transform.Rotate(new Vector3(0f, 0f, -30f));
+            //}
+                transform.Rotate(new Vector3(0f, 0f, 25f));
+
+            if (transform.eulerAngles.z > 50 && transform.eulerAngles.z < 310)
+            {
+                transform.eulerAngles = Vector3.forward * (zValue);
+            }
+            if (oldumu == true)
+            {
+                transform.eulerAngles = Vector3.forward * (zValue);
+            }
+        }
+        //else
+        //{
+
+            
+        //}
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

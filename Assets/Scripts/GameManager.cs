@@ -15,7 +15,11 @@ public class GameManager : MonoBehaviour
             skor = PlayerPrefs.GetInt(nameof(skor));
             skortext.text = skor.ToString();
     }
-
+    void OnApplicationQuit()
+    {
+        skor = 0;
+        PlayerPrefs.SetInt(nameof(skor), skor);
+    }
     // Update is called once per frame
     void Update()
     {
